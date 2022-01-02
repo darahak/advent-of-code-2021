@@ -135,7 +135,7 @@ function validateBoard(board) {
     let lineCheck = 0;
 
     for (let j = 0; j < height; ++j) {
-      const index = j * height + i;
+      const index = j * width + i;
 
       if (board[index].marked) {
         ++lineCheck;
